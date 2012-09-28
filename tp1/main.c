@@ -15,6 +15,8 @@
  */
 int main(int argc, char** argv) {
     creerDamier(5);
+    marcher(2 , 2 , 1);
+    dumpDamier();
     return (EXIT_SUCCESS);
 }
 
