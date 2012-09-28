@@ -18,7 +18,7 @@ extern "C" {
     
     void afficherDamier();
 
-
+    int tailleDamier;
 #ifdef	__cplusplus
 }
 #endif
