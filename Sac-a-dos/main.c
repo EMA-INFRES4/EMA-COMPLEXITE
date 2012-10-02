@@ -11,31 +11,39 @@
 /*
  * 
  */
-int main(int argc, char** argv[]) {
+int main(int argc, char** argv) {
     
     
     // récupératon des arguments
-    /*if (argc > 1) {
-         char * arg = argv[1];
-         
-    } else {
-            printf("AIDE :\n");
-    }*/
     
-    // Simulation hors ligne
+        // init variables 
+        //int nb_var;
+        /*int val[nb_var] ;
+        int limite_masse ;
+        int masse[nb_var] ;    
+        int ratio[nb_var][2];*/
+        
+        //char * fich = (char) argv[1];
+        
+        FILE* fichier = NULL;
+        char* nb_var_temp;
+        fichier = fopen("P15_0.dat", "r");
+        fgets(nb_var_temp, sizeof(nb_var_temp), fichier);
+        printf("%s", nb_var_temp);
+        fclose(fichier);
+      
+    getchar();
+    getchar();
+   
     
-    int nb_var = 15;
-    int val[nb_var] = {36, 83, 59, 71, 43, 67, 23, 52, 93, 25, 67, 89, 60, 47, 64};
-    int limite_masse = 87;
-    int masse[nb_var] = {7, 19, 30, 22, 30, 44, 11, 21, 35, 14, 29, 18, 3, 36, 42};
     
-    int ratio[nb_var][2];
-    for (int i = 0; i <nb_var ; i++){
+    
+    /*for (int i = 0; i <nb_var ; i++){
         ratio[i][0] = val[i]/masse[i];
     }
     for (int i = 0; i <nb_var ; i++){
         printf("%i : %i", ratio[i][0], ratio[i][1]);
-    }
+    }*/
     
     
 return (EXIT_SUCCESS);

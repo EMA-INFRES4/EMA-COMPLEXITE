@@ -1,0 +1,9 @@
+Exception: STATUS_STACK_OVERFLOW at eip=004011EF
+eax=840160A0 ebx=00000000 ecx=00032B20 edx=00000000 esi=200281E8 edi=611A1EDF
+ebp=0022ABE8 esp=0022AB18 program=C:\Users\Crazysky\Documents\GitHub\EMA-COMPLEXITE\Sac-a-dos\dist\Debug\Cygwin-Windows\sac-a-dos.exe, pid 5436, thread main
+cs=001B ds=0023 es=0023 fs=003B gs=0000 ss=0023
+Stack trace:
+Frame     Function  Args
+0022ABE8  004011EF  (00000001, 0022AC10, 200280E8, 200416A7)
+0022ACF8  61007535  (00000000, 0022CD78, 61006B20, 00000000)
+End of stack trace
